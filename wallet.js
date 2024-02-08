@@ -14,7 +14,7 @@
 //Detect if window is a PWA
 function isPWA() { return Boolean((window.matchMedia && window.matchMedia('(display-mode: standalone)').matches)|| window.navigator.standalone); }
 
-import { ethers } from 'https://cdn.ethers.io/lib/ethers-5.2.esm.min.js';
+import { ethers } from 'https://cdn.jsdelivr.net/npm/ethers@6.10.0/lib.commonjs/index.min.js';
 import { ImmortalStorage, LocalStorageStore, IndexedDbStore } from 'https://cdn.jsdelivr.net/gh/gruns/ImmortalDB@master/dist/immortal-db.min.js';
  
 const stores = [LocalStorageStore, IndexedDbStore];
