@@ -15,7 +15,7 @@
 function isPWA() { return Boolean((window.matchMedia && window.matchMedia('(display-mode: standalone)').matches)|| window.navigator.standalone); }
 
 const { ethers } = require('https://cdn.ethers.io/lib/ethers-5.2.esm.min.js');
-const { ImmortalStorage, LocalStorageStore, IndexedDbStore } = require('https://raw.githubusercontent.com/gruns/ImmortalDB/master/dist/immortal-db.min.js);
+const { ImmortalStorage, LocalStorageStore, IndexedDbStore } = require('https://cdn.jsdelivr.net/gh/gruns/ImmortalDB@master/dist/immortal-db.min.js');
  
 const stores = [LocalStorageStore, IndexedDbStore];
 const db = new ImmortalStorage(stores);
